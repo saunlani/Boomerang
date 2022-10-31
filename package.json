@@ -1,5 +1,5 @@
 {
-  "name": "Relay",
+  "name": "Boomerang",
   "version": "1.0.0",
   "description": "API Security Gateway",
   "main": "index.ts",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/saunlani/Relay.git"
+    "url": "git+https://github.com/saunlani/Boomerang.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/saunlani/Relay/issues"
+    "url": "https://github.com/saunlani/Boomerang/issues"
   },
-  "homepage": "https://github.com/saunlani/Relay#readme",
+  "homepage": "https://github.com/saunlani/Boomerang#readme",
   "dependencies": {
     "basic-auth": "^2.0.1",
     "dotenv": "^16.0.3",
