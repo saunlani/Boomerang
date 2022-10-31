@@ -1,4 +1,4 @@
-import express, { Request, Response } from "express"
+import express from "express"
 import { basicAuth } from "../../../middlewares/basicAuth/basicAuth"
 import { createProxyMiddleware } from "http-proxy-middleware"
 
