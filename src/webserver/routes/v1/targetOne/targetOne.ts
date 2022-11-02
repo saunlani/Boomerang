@@ -1,7 +1,7 @@
 import express from "express"
 import { basicAuth } from "../../../middlewares/basicAuth/basicAuth"
 import { ipCheck } from "../../../middlewares/ipCheck/ipCheck"
-import { createProxyMiddleware, fixRequestBody } from "http-proxy-middleware"
+import { createProxyMiddleware } from "http-proxy-middleware"
 
 export const targetOneRouter = () => {
   const router = express.Router()
@@ -9,7 +9,6 @@ export const targetOneRouter = () => {
   router.get('/', ipCheck, basicAuth, createProxyMiddleware({
     target: process.env.TARGET_URL_ONE,
     changeOrigin: true,
-    onProxyReq: fixRequestBody
   }))
 
   // POST endpoints
