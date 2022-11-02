@@ -5,7 +5,6 @@ import { createProxyMiddleware, fixRequestBody } from "http-proxy-middleware"
 
 export const targetOneRouter = () => {
   const router = express.Router()
-
   // GET endpoints
   router.get('/', ipCheck, basicAuth, createProxyMiddleware({
     target: process.env.TARGET_URL_ONE,

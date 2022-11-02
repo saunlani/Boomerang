@@ -2,7 +2,6 @@ import { Request, Response, NextFunction } from "express"
 
 const hasIp = (ip: string, res: Response) => {
   if (!process.env.APPROVED_IP_LIST || !JSON.parse(process.env.APPROVED_IP_LIST).includes(ip)) {
-
     return res.status(401).json({ msg: 'Access Denied' })
   }
   return true
