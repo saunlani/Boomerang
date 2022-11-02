@@ -1,6 +1,6 @@
-import { clickRouter } from './click/click'
+import { targetOneRouter } from './targetOne/targetOne'
 import { Application } from "express"
 
 export const routes = (app: Application) => {
-  app.use('/api/v1/click', clickRouter())
+  app.use('/api/v1/one', targetOneRouter())
 }
